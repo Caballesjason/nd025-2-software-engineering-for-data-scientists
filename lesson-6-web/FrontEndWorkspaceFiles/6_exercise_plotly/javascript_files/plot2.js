@@ -10,10 +10,15 @@ var country_name_china = 'China';
 
 var trace1 = {
 /* TODO: Use the country name and arable land data to make a bar chart */
+x: [country_name_brazil, country_name_germany, country_name_china],
+y: arable_land_brazil.concat(arable_land_germany).concat(arable_land_china),
+name: year,
+type: "bar"
 };
 
 var layout = {
  /* TODO: include a title for the chart */
+ title: "Land Used for Agriculture <br> 2015"
 };
 
 var data = [trace1];
